@@ -1,1 +1,3448 @@
-[]
+[
+    {
+        "id": "934857fc6df36ba6",
+        "type": "tab",
+        "label": "UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c65f7edc8c317f3f",
+        "type": "tab",
+        "label": "Ibisa Fleet Provisioning",
+        "disabled": false
+    },
+    {
+        "id": "7f230b831953d37b",
+        "type": "tab",
+        "label": "Guardar datos en buffer",
+        "disabled": false,
+        "info": "Manejo de buffer offline → envío al reconectar",
+        "env": []
+    },
+    {
+        "id": "d0a0b58d43b094c9",
+        "type": "tab",
+        "label": "Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a85404937e6685c7",
+        "type": "tls-config",
+        "name": "IoT-Core",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "b91a13606a3b304fd309296269241e94d631c72c6a71ebd72ca8d1e9fc6b7208-certificate.pem.crt",
+        "keyname": "b91a13606a3b304fd309296269241e94d631c72c6a71ebd72ca8d1e9fc6b7208-private.pem.key",
+        "caname": "AmazonRootCA1.pem",
+        "servername": "awbagdz13ax6c-ats.iot.us-east-1.amazonaws.com",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "c6e2e1bb1f826bb5",
+        "type": "mqtt-broker",
+        "name": "otroCliente",
+        "broker": "awbagdz13ax6c-ats.iot.us-east-1.amazonaws.com",
+        "port": "8883",
+        "tls": "a85404937e6685c7",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2638a7a8514a2639",
+        "type": "mqtt-broker",
+        "name": "IoTCore",
+        "broker": "awbagdz13ax6c-ats.iot.us-east-1.amazonaws.com",
+        "port": "8883",
+        "tls": "a85404937e6685c7",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "26d244d580d66db9",
+        "type": "tls-config",
+        "name": "tls",
+        "cert": "/home/pi/certificados/certificado.pem.crt",
+        "key": "/home/pi/certificados/llave.pem.key",
+        "ca": "/home/pi/certificados/AmazonRootCA1.pem",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "9c59a3fef7016c4f",
+        "type": "mqtt-broker",
+        "name": "newboker",
+        "broker": "awbagdz13ax6c-ats.iot.us-east-2.amazonaws.com",
+        "port": "8883",
+        "tls": "26d244d580d66db9",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9917a1879cf30902",
+        "type": "tls-config",
+        "name": "Cerificados dispositivo",
+        "cert": "/home/pi/certificados/device.pem.crt",
+        "key": "/home/pi/certificados/device.private.key",
+        "ca": "/home/pi/certificados/AmazonRootCA1.pem",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "298b7e953ed62ce1",
+        "type": "mqtt-broker",
+        "name": "Servidor MQTT",
+        "broker": "awbagdz13ax6c-ats.iot.us-east-2.amazonaws.com",
+        "port": "8883",
+        "tls": "9917a1879cf30902",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": "10",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0d3321a7a56f7458",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#101f46",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#101f46",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#101f46",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1e3b84",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#101f46",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "2ba7f282d3260184",
+        "type": "ui_tab",
+        "name": "Dispositivo",
+        "icon": "devices",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "88cb225e539425fa",
+        "type": "ui_tab",
+        "name": "Gateway",
+        "icon": "devices",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f824c79760f0da8f",
+        "type": "ui_tab",
+        "name": "ESP32",
+        "icon": "devices",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "91d4ba4b76086bb9",
+        "type": "ui_tab",
+        "name": "Cloud (AWS)",
+        "icon": "devices",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9e2969aeaf0492d7",
+        "type": "ui_tab",
+        "name": "Estado",
+        "icon": "devices",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d34869834f61252f",
+        "type": "ui_tab",
+        "name": "Gateway - Modbus TCP",
+        "icon": "device",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d442871653f24632",
+        "type": "ui_tab",
+        "name": "Gateway - Modbus RTU",
+        "icon": "device",
+        "order": 8,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "gateway_tab_id",
+        "type": "ui_tab",
+        "name": "NanoFreeze",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b7d2a20cfe6d91f0",
+        "type": "ui_group",
+        "name": "Identificacion",
+        "tab": "2ba7f282d3260184",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0f3ce64d958f0d56",
+        "type": "ui_group",
+        "name": "Gateway - Parametros",
+        "tab": "2ba7f282d3260184",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6d9a9403e2e6bc79",
+        "type": "ui_group",
+        "name": "ESP32 - Parametros",
+        "tab": "2ba7f282d3260184",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "85aa25792d04d3d0",
+        "type": "ui_group",
+        "name": "NF",
+        "tab": "2ba7f282d3260184",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "444a3086794e3cff",
+        "type": "ui_group",
+        "name": "Identificacion",
+        "tab": "88cb225e539425fa",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0bf4102973afd724",
+        "type": "ui_group",
+        "name": "Modbus RTU",
+        "tab": "88cb225e539425fa",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0eb5894b069cbd35",
+        "type": "ui_group",
+        "name": "Modbus TCP",
+        "tab": "88cb225e539425fa",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0603ded8bd9beed9",
+        "type": "ui_group",
+        "name": "Identificacion",
+        "tab": "f824c79760f0da8f",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bbefccbdd8399de5",
+        "type": "ui_group",
+        "name": "Red (WiFi / Ethernet)",
+        "tab": "f824c79760f0da8f",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5ddb3780d191e07f",
+        "type": "ui_group",
+        "name": "MQTT",
+        "tab": "f824c79760f0da8f",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "528b2ba484c9c1bc",
+        "type": "ui_group",
+        "name": "Intervalo de envío",
+        "tab": "f824c79760f0da8f",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ff520189b286d92a",
+        "type": "ui_group",
+        "name": "Endpoint",
+        "tab": "91d4ba4b76086bb9",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "255befeeeee6492e",
+        "type": "ui_group",
+        "name": "Región",
+        "tab": "91d4ba4b76086bb9",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "de6d29e55290262d",
+        "type": "ui_group",
+        "name": "Thing Name",
+        "tab": "91d4ba4b76086bb9",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8a0ef9aed67fab85",
+        "type": "ui_group",
+        "name": "Certificados",
+        "tab": "91d4ba4b76086bb9",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "40dc4781144af8dd",
+        "type": "ui_group",
+        "name": "Estado MQTT",
+        "tab": "9e2969aeaf0492d7",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a85631b4c8b854d7",
+        "type": "ui_group",
+        "name": "Estado AWS",
+        "tab": "9e2969aeaf0492d7",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fc4857fd74cfb911",
+        "type": "ui_group",
+        "name": "Última comunicación",
+        "tab": "9e2969aeaf0492d7",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3e1a890ea441b84f",
+        "type": "ui_group",
+        "name": "Botones de control",
+        "tab": "9e2969aeaf0492d7",
+        "order": 5,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8dabf8b5895a29b1",
+        "type": "ui_group",
+        "name": "Prueba",
+        "tab": "88cb225e539425fa",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d9941b2aaa96055a",
+        "type": "ui_group",
+        "name": "Prueba",
+        "tab": "f824c79760f0da8f",
+        "order": 5,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c63c20f7f67dfa37",
+        "type": "ui_group",
+        "name": "NF",
+        "tab": "9e2969aeaf0492d7",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ab6c6fea7303e677",
+        "type": "ui_group",
+        "name": "Modbus (selector)",
+        "tab": "88cb225e539425fa",
+        "order": 5,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1630e653ef220101",
+        "type": "ui_group",
+        "name": "Modbus",
+        "tab": "d34869834f61252f",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "26b97602a5bf094d",
+        "type": "ui_group",
+        "name": "Modbus",
+        "tab": "d442871653f24632",
+        "order": 5,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "identificacion_group_id",
+        "type": "ui_group",
+        "name": "Información",
+        "tab": "gateway_tab_id",
+        "order": 3,
+        "disp": true,
+        "width": 25,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "capacidades_group_id",
+        "type": "ui_group",
+        "name": "Datos",
+        "tab": "gateway_tab_id",
+        "order": 6,
+        "disp": true,
+        "width": 25,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "datos_group_id",
+        "type": "ui_group",
+        "name": "Funciones",
+        "tab": "gateway_tab_id",
+        "order": 5,
+        "disp": true,
+        "width": 25,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "modbus_config_group_id",
+        "type": "ui_group",
+        "name": "Modbus",
+        "tab": "gateway_tab_id",
+        "order": 4,
+        "disp": true,
+        "width": 25,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dee1869cf73040de",
+        "type": "ui_group",
+        "name": "Configuraciones",
+        "tab": "gateway_tab_id",
+        "order": 1,
+        "disp": true,
+        "width": 25,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "016de6dc82a05fe5",
+        "type": "ui_group",
+        "name": "MQTT",
+        "tab": "gateway_tab_id",
+        "order": 2,
+        "disp": true,
+        "width": 25,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "087e7e9c034c1866",
+        "type": "modbus-client",
+        "name": "Sensor DYN-200",
+        "clienttype": "simpleser",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyACM0",
+        "serialType": "RTU",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "d400eea7c3ae3f5a",
+        "type": "modbus-client",
+        "name": "Anemometro",
+        "clienttype": "simpleser",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyACM0",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "074ff40e03100e43",
+        "type": "modbus-client",
+        "name": "Sensor de vibraciones",
+        "clienttype": "simpleser",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyACM0",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "269659490639847f",
+        "type": "modbus-client",
+        "name": "Gateway",
+        "clienttype": "simpleser",
+        "bufferCommands": true,
+        "stateLogEnabled": true,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyACM0",
+        "serialType": "RTU",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": "",
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": true,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "e49a1121dd1bbc8c",
+        "type": "sqlitedb",
+        "db": "/home/pi/Sensores_DB/buffer.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "1534001d1511dfb8",
+        "type": "MySQLdatabase",
+        "name": "DB_NANO_FREEZE",
+        "host": "nanofreeze-db.ch6wyqwi8624.us-east-2.rds.amazonaws.com",
+        "port": "3306",
+        "db": "tables_nano_freeze",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "a901c62f3c12845b",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": 8086,
+        "protocol": "http",
+        "database": "database",
+        "name": "Sensores",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "timeout": 10,
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "29cb0e6a48c2f7cf",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Verify ID Device",
+        "func": "// Obtener el device_code ingresado\nlet deviceCode = msg.payload.trim();\n\nif (!deviceCode) {\n    node.status({fill: \"red\", shape: \"ring\", text: \"ID vacío\"});\n    return [null, null];  // No envía nada\n}\n\n// Consulta SQL\nmsg.topic = `\n    SELECT name, status, energy_capability, temperature_capability \n    FROM device \n    WHERE device_code = ?\n`;\n\nmsg.payload = [deviceCode];  // Parámetro seguro contra inyección SQL\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 80,
+        "wires": [
+            [
+                "3d8a0c17cec6f7e8"
+            ]
+        ]
+    },
+    {
+        "id": "abcd58f00e92ce77",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Save Capabilities",
+        "func": "flow.set(msg.topic, msg.payload === 'true');\n// Trigger update to datos\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "a253fae88c66b24d"
+            ]
+        ]
+    },
+    {
+        "id": "a253fae88c66b24d",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Update Datos",
+        "func": "var msgs = [];\nif (flow.get('energy_capability')) {\n    msgs.push({payload: '100 kWh'}); // Placeholder\n} else {\n    msgs.push({payload: ''});\n}\nif (flow.get('temperature_capability')) {\n    msgs.push({payload: '25°C'}); // Placeholder\n} else {\n    msgs.push({payload: ''});\n}\nreturn [msgs[0], msgs[1]];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 220,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "81df7455591c80f6",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Save Modbus Type",
+        "func": "flow.set('modbus_type', msg.payload);\nmsg.modbus_type = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 320,
+        "wires": [
+            [
+                "4fb04971651bdb88"
+            ]
+        ]
+    },
+    {
+        "id": "86114a456c54a61e",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Save Modbus Config",
+        "func": "if (msg.payload && msg.payload.type === \"RTU\") {\n\n    const puertoDesdeScan = (global.get(\"modbus_rtu_config\") || {}).serialPort;\n    const puerto = msg.payload.port || puertoDesdeScan || \"/dev/ttyACM0\";\n\n    const cfg = {\n        connectorType:  \"serial\",\n        serialPort:     puerto,\n        serialBaudrate: Number(msg.payload.baud) || 9600,\n        serialParity:   msg.payload.parity || \"none\",\n        serialDatabits: Number(msg.payload.data_bits) || 8,\n        serialStopbits: Number(msg.payload.stop_bits) || 1,\n        fc:       Number(msg.payload.fc) || 4,\n        unitId:   Number(msg.payload.slave_id) || 1,\n        address:  Number(msg.payload.address) || 0,\n        quantity: Number(msg.payload.quantity) || 10\n    };\n\n    global.set(\"modbus_rtu_config\", cfg);\n\n    const connectorPayload = {\n        connectorType:  \"serial\",\n        serialPort:     cfg.serialPort,\n        serialBaudrate: cfg.serialBaudrate,\n        serialDatabits: cfg.serialDatabits,\n        serialStopbits: cfg.serialStopbits,\n        serialParity:   cfg.serialParity,\n        serialType:     \"RTU-BUFFERED\"\n    };\n\n    node.status({fill:\"green\", shape:\"dot\", text:\"RTU OK → \" + cfg.serialPort + \" @ \" + cfg.serialBaudrate});\n    node.warn(\"Config Modbus guardada:\");\n    node.warn(cfg);\n\n    // Salida 1 → Flex Connector (inmediato)\n    // Salida 2 → trigger primera lectura (después del delay)\n    return [{ payload: connectorPayload }, { payload: {} }];\n\n} else {\n    node.warn(\"Payload no es config RTU válida: \" + JSON.stringify(msg.payload));\n    node.status({fill:\"grey\", shape:\"ring\", text:\"No RTU\"});\n    return null;\n}\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 500,
+        "wires": [
+            [
+                "f43d9da2b3ff6cc4"
+            ],
+            [
+                "f29f84c00f182318"
+            ]
+        ]
+    },
+    {
+        "id": "1a91282c597b8dc7",
+        "type": "debug",
+        "z": "934857fc6df36ba6",
+        "name": "debug desde template",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "358ce7e7e33accca",
+        "type": "debug",
+        "z": "934857fc6df36ba6",
+        "name": "debug desde flex connector",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1540,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "720250b4231acc1a",
+        "type": "status",
+        "z": "934857fc6df36ba6",
+        "name": "Status Modbus",
+        "scope": [
+            "f43d9da2b3ff6cc4"
+        ],
+        "x": 100,
+        "y": 880,
+        "wires": [
+            [
+                "84189eb270ac5504"
+            ]
+        ]
+    },
+    {
+        "id": "84189eb270ac5504",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Obtener estado modbus",
+        "func": "let textoOriginal = msg.status?.text || \"desconocido\";\nlet mensaje = textoOriginal;\nlet color = \"grey\";\n\n// Mapeo de estados comunes del modbus-flex-connector\nswitch (textoOriginal.toLowerCase()) {\n    case \"connected\":\n    case \"active\":\n        mensaje = \"Conectado\";\n        color = \"green\";\n        break;\n    case \"connecting\":\n    case \"reconnecting\":\n        mensaje = \"Conectando...\";\n        color = \"orange\";\n        break;\n    case \"disconnected\":\n    case \"failed\":\n    case \"error\":\n        mensaje = \"Error / Desconectado\";\n        color = \"red\";\n        break;\n    default:\n        mensaje = textoOriginal;\n        color = \"grey\";\n}\n\n// Guardar global para uso en otros nodos si necesitas\nglobal.set(\"conexionModbus\", { texto: mensaje, color: color, original: textoOriginal });\n\n// Preparar para el dashboard\nmsg.payload = mensaje;\nmsg.color = color;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 880,
+        "wires": [
+            [
+                "f4f326e053ea799a"
+            ]
+        ]
+    },
+    {
+        "id": "3b33b46f0eeee1af",
+        "type": "inject",
+        "z": "934857fc6df36ba6",
+        "name": "Trigger Lectura cada 10s",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "x": 150,
+        "y": 600,
+        "wires": [
+            [
+                "f078df35a15c52bd",
+                "f33277c99fc9133c"
+            ]
+        ]
+    },
+    {
+        "id": "589066c7d10a2358",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Preparar Lectura Modbus",
+        "func": "const cfg = global.get(\"modbus_rtu_config\") || {};\n\nif (!cfg.serialPort) {\n    node.status({fill:\"red\", shape:\"ring\", text:\"Esperando config...\"});\n    return null;\n}\n\nmsg.payload = {\n    fc:       cfg.fc || 4,\n    unitid:   cfg.unitId || 1,\n    address:  cfg.address || 0,\n    quantity: cfg.quantity || 10\n};\n\nnode.status({fill:\"blue\", shape:\"dot\", text:\"FC\" + msg.payload.fc + \" → \" + cfg.serialPort});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 600,
+        "wires": [
+            [
+                "082e43bd5417b56a",
+                "3d4583a3d3be2a27"
+            ]
+        ]
+    },
+    {
+        "id": "5904a01c4f2d94a0",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Formatear Datos Crudos",
+        "func": "if (!msg.payload || !Array.isArray(msg.payload) || msg.payload.length < 10) {\n    node.status({fill:\"red\", shape:\"ring\", text:\"Sin datos válidos\"});\n    return null;\n}\n\nconst deviceId = global.get(\"dispositivoId\") || null;\n\nif (!deviceId) {\n    node.status({fill:\"yellow\", shape:\"ring\", text:\"Falta ID dispositivo\"});\n    return null;\n}\n\nconst data = msg.payload;\nconst voltage     = data[0] / 10.0;\nconst current     = ((data[2] << 16) | data[1]) / 1000.0;\nconst power       = ((data[4] << 16) | data[3]) / 10.0;\nconst energy      = (data[6] << 16) | data[5];\nconst frequency   = data[7] / 10.0;\nconst powerFactor = data[8] / 100.0;\nconst alarm       = data[9] === 0xFFFF;\n\nmsg.topic   = `NanoFreeze/${deviceId}/Sensores`;\nmsg.payload = {\n    timestamp:   new Date().toISOString(),\n    deviceId:    deviceId,\n    power:       power,\n    energy_wh:   energy,\n    energy_kwh:  parseFloat((energy / 1000).toFixed(3)),\n    voltage:     voltage,\n    current:     current,\n    frequency:   frequency,\n    powerFactor: powerFactor,\n    alarm:       alarm\n};\n\nnode.status({fill:\"green\", shape:\"dot\", text:`${deviceId} → ${power}W`});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 600,
+        "wires": [
+            [
+                "b9cf51927bc693c5",
+                "218795410d980ca0",
+                "51b58e41d53df3c7"
+            ]
+        ]
+    },
+    {
+        "id": "327b5e637ec0ab34",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Procesar respuesta DB",
+        "func": "if (msg.payload && msg.payload.length > 0) {\n    let row = msg.payload[0];  // Primera fila (debería ser única por device_code)\n\n    // Enviar a los textos\n    let nameMsg = { payload: row.name || \"No encontrado\" };\n    let statusMsg = { payload: row.status || \"Desconocido\" };\n\n    // Enviar a switches (true/false como booleano)\n    let energyMsg = { topic: \"energy_capability\", payload: !!row.energy_capability };\n    let tempMsg = { topic: \"temperature_capability\", payload: !!row.temperature_capability };\n\n    node.status({fill: \"green\", shape: \"dot\", text: \"Device encontrado\"});\n\n    return [nameMsg, statusMsg, energyMsg, tempMsg];\n} else {\n    node.status({fill: \"yellow\", shape: \"ring\", text: \"Device no encontrado\"});\n\n    return [\n        { payload: \"No encontrado\" },   // name\n        { payload: \"No encontrado\" },   // status\n        { topic: \"energy_capability\", payload: false },\n        { topic: \"temperature_capability\", payload: false }\n    ];\n}",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 60,
+        "wires": [
+            [
+                "378c875b6cb14aa5"
+            ],
+            [
+                "40649b1aec1c9ed2"
+            ],
+            [
+                "73daaa30bf12abf0"
+            ],
+            [
+                "09376ff91b542d64"
+            ]
+        ]
+    },
+    {
+        "id": "417f06f1c633178d",
+        "type": "change",
+        "z": "934857fc6df36ba6",
+        "name": "Obtener ID",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dispositivoId",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 60,
+        "wires": [
+            [
+                "29cb0e6a48c2f7cf",
+                "6a8b2f3753d870a0"
+            ]
+        ]
+    },
+    {
+        "id": "6a8b2f3753d870a0",
+        "type": "debug",
+        "z": "934857fc6df36ba6",
+        "name": "Obtener ID",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "b4162c8a05649291",
+        "type": "inject",
+        "z": "934857fc6df36ba6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "PRUEBA-123",
+        "payloadType": "str",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "417f06f1c633178d"
+            ]
+        ]
+    },
+    {
+        "id": "c2ec65b51350cb53",
+        "type": "mqtt out",
+        "z": "934857fc6df36ba6",
+        "name": "Subir a IoT Core",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "298b7e953ed62ce1",
+        "x": 1880,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "f8d42c45ff976e06",
+        "type": "status",
+        "z": "934857fc6df36ba6",
+        "name": "Status MQTT",
+        "scope": [
+            "c2ec65b51350cb53"
+        ],
+        "x": 490,
+        "y": 780,
+        "wires": [
+            [
+                "94205bff43c99f43",
+                "579d1a72957582d8"
+            ]
+        ]
+    },
+    {
+        "id": "94205bff43c99f43",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Obtener estado MQTT",
+        "func": "let textoOriginal = msg.status?.text || \"desconocido\";\nlet mensaje = \"Desconocido\";\nlet color = \"grey\";\n\n// Mapeo de claves comunes de estado MQTT (i18n)\nswitch (textoOriginal.toLowerCase()) {\n    case \"node-red:common.status.connected\":\n        mensaje = \"Conectado\";\n        color = \"green\";\n        break;\n\n    case \"node-red:common.status.connecting\":\n    case \"node-red:common.status.reconnecting\":\n        mensaje = \"Conectando...\";\n        color = \"orange\";\n        break;\n\n    case \"node-red:common.status.disconnected\":\n        mensaje = \"Desconocido\";\n        color = \"red\";\n        break;\n\n    default:\n        if (textoOriginal.toLowerCase().includes(\"error\") || \n            textoOriginal.toLowerCase().includes(\"failed\") || \n            textoOriginal.toLowerCase().includes(\"refused\")) {\n            mensaje = \"Error de conexión\";\n            color = \"red\";\n        } else {\n            mensaje = textoOriginal;\n            color = \"grey\";\n        }\n}\n\n// Guardamos el estado para el dashboard y el router\nglobal.set(\"conexionMQTT\", { \n    texto: mensaje, \n    color: color, \n    original: textoOriginal \n});\n\n// ────────────────────────────────────────────────\n//           DETECTAR RECONEXIÓN\n// ────────────────────────────────────────────────\nconst estadoAnterior = flow.get(\"mqtt_estado_anterior\") || \"desconectado\";\nconst estadoActual = textoOriginal.toLowerCase();\n\nflow.set(\"mqtt_estado_anterior\", estadoActual);\n\n// Solo cuando PASA A CONECTADO\nlet dispararBuffer = false;\nif (estadoActual.includes(\"connected\") && !estadoAnterior.includes(\"connected\")) {\n    dispararBuffer = true;\n    node.status({fill:\"blue\", shape:\"ring\", text:\"Reconectado → enviando buffer\"});\n}\n\n// Guardamos también mqtt_online (para compatibilidad con tu router actual)\nglobal.set(\"mqtt_online\", mensaje === \"Conectado\");\n\n// Salidas:\n// 1 = para dashboard (siempre)\n// 2 = para disparar lectura de buffer (solo al reconectar)\nreturn [\n    { payload: mensaje, color: color },           // salida 1 → dashboard\n    dispararBuffer ? { topic: `\n        SELECT id, uuid, payload, intentos\n        FROM buffer_iot\n        WHERE enviado = 0\n        ORDER BY id ASC\n        LIMIT 1\n    ` } : null                                      // salida 2 → sqlite leer pendiente\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 800,
+        "wires": [
+            [
+                "0a053bda851ddfd0"
+            ],
+            [
+                "0a70ac134170a0cf"
+            ]
+        ]
+    },
+    {
+        "id": "51b58e41d53df3c7",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Router Online/Offline",
+        "func": "let online = global.get(\"mqtt_online\") || false;\n\nnode.warn(\"TOPIC: \" + msg.topic);\nnode.warn(\"PAYLOAD: \" + JSON.stringify(msg.payload, null, 2));\nnode.warn(\"online: \" + online);\n\nif (online) {\n    node.warn(\"ENVIANDO POR SALIDA 1\");\n    // Guardar copia del mensaje en flow context para comparar\n    flow.set(\"ultimo_mensaje_enviado\", {\n        timestamp: Date.now(),\n        topic: msg.topic,\n        payload: JSON.parse(JSON.stringify(msg.payload))\n    });\n    return [msg, null];\n} else {\n    node.warn(\"GUARDANDO EN BUFFER\");\n    msg.topic = \"INSERT INTO buffer_iot (uuid, payload) VALUES (?, ?)\";\n    msg.payload = [\n        Date.now().toString(),\n        JSON.stringify(msg.payload)\n    ];\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 640,
+        "wires": [
+            [
+                "c2ec65b51350cb53",
+                "731a9d5a19136f92"
+            ],
+            [
+                "a9a76bb0a630b2b5"
+            ]
+        ]
+    },
+    {
+        "id": "a9a76bb0a630b2b5",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Preparar INSERT",
+        "func": "if (!msg.responseBuffer || !msg.responseBuffer.data) {\n    return null;\n}\n\nconst data = {\n    timestamp: new Date().toISOString(),\n    deviceId: \"DEV-10-1\",\n    registro1: msg.responseBuffer.data[0] || 0,\n    registro2: msg.responseBuffer.data[1] || 0,\n    registro3: msg.responseBuffer.data[2] || 0,\n    registro4: msg.responseBuffer.data[3] || 0\n};\n\nconst uuid = Date.now().toString();\nconst json = JSON.stringify(data).replace(/'/g, \"''\");\n\nmsg.topic = `\nINSERT INTO buffer_iot (uuid, payload)\nVALUES ('${uuid}', '${json}')\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1790,
+        "y": 700,
+        "wires": [
+            [
+                "3d8f487978a48885",
+                "623d17611e4f53df"
+            ]
+        ]
+    },
+    {
+        "id": "0a70ac134170a0cf",
+        "type": "link out",
+        "z": "934857fc6df36ba6",
+        "name": "Link → Buffer",
+        "mode": "link",
+        "links": [
+            "84ed2e6ed6f5b67d"
+        ],
+        "x": 955,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "731a9d5a19136f92",
+        "type": "debug",
+        "z": "934857fc6df36ba6",
+        "name": "debug Router Online/Offline",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2100,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "579d1a72957582d8",
+        "type": "debug",
+        "z": "934857fc6df36ba6",
+        "name": "debug Status MQTT",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "623d17611e4f53df",
+        "type": "debug",
+        "z": "934857fc6df36ba6",
+        "name": "debug Preparar INSERT",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2110,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f33277c99fc9133c",
+        "type": "switch",
+        "z": "934857fc6df36ba6",
+        "name": "Funciones",
+        "property": "procesamiento_activo",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 600,
+        "wires": [
+            [
+                "589066c7d10a2358"
+            ],
+            [
+                "a1b142936638e920"
+            ]
+        ]
+    },
+    {
+        "id": "a1b142936638e920",
+        "type": "debug",
+        "z": "934857fc6df36ba6",
+        "name": "debug Funciones (UI)",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f078df35a15c52bd",
+        "type": "debug",
+        "z": "934857fc6df36ba6",
+        "name": "debug Trigger",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 120,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "3d4583a3d3be2a27",
+        "type": "debug",
+        "z": "934857fc6df36ba6",
+        "name": "debug Preparar Lectura Modbus",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "8acbcaf8294bf729",
+        "type": "ui_dropdown",
+        "z": "934857fc6df36ba6",
+        "name": "",
+        "label": "Tipo Modbus",
+        "tooltip": "",
+        "place": "Seleccione tipo",
+        "group": "modbus_config_group_id",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "TCP",
+                "value": "TCP",
+                "type": "str"
+            },
+            {
+                "label": "RTU",
+                "value": "RTU",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "modbus_type",
+        "topicType": "str",
+        "className": "",
+        "x": 250,
+        "y": 340,
+        "wires": [
+            [
+                "81df7455591c80f6"
+            ]
+        ]
+    },
+    {
+        "id": "60201ff91527eb9c",
+        "type": "ui_button",
+        "z": "934857fc6df36ba6",
+        "name": "Conexion Modbus",
+        "group": "dee1869cf73040de",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Conexion Modbus",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "settings_ethernet",
+        "payload": "{\"group\":{\"hide\":[\"NanoFreeze_Información\",\"NanoFreeze_Funciones\",\"NanoFreeze_MQTT\"],\"show\":[\"NanoFreeze_Configuraciones\",\"NanoFreeze_Modbus\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 980,
+        "wires": [
+            [
+                "afc395a8f52fbefc"
+            ]
+        ]
+    },
+    {
+        "id": "7cd0b52fe3badec7",
+        "type": "ui_button",
+        "z": "934857fc6df36ba6",
+        "name": "Conexion Nube",
+        "group": "dee1869cf73040de",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Conexion Nube",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "cloud",
+        "payload": "{\"group\":{\"hide\":[\"NanoFreeze_Información\",\"NanoFreeze_Funciones\",\"NanoFreeze_Modbus\"],\"show\":[\"NanoFreeze_Configuraciones\",\"NanoFreeze_MQTT\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 280,
+        "y": 1060,
+        "wires": [
+            [
+                "afc395a8f52fbefc"
+            ]
+        ]
+    },
+    {
+        "id": "5e60b24789625fdf",
+        "type": "ui_button",
+        "z": "934857fc6df36ba6",
+        "name": "Configuracion IoT",
+        "group": "dee1869cf73040de",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Configuracion IoT",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "settings",
+        "payload": "{\"group\":{\"hide\":[\"NanoFreeze_MQTT\",\"NanoFreeze_Funciones\",\"NanoFreeze_Modbus\"],\"show\":[\"NanoFreeze_Configuraciones\",\"NanoFreeze_Información\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 1120,
+        "wires": [
+            [
+                "afc395a8f52fbefc"
+            ]
+        ]
+    },
+    {
+        "id": "618fbee508e1a3f4",
+        "type": "ui_button",
+        "z": "934857fc6df36ba6",
+        "name": "Activacion IoT",
+        "group": "dee1869cf73040de",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Activacion IoT",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "play_arrow",
+        "payload": "{\"group\":{\"hide\":[\"NanoFreeze_MQTT\",\"NanoFreeze_Información\",\"NanoFreeze_Modbus\"],\"show\":[\"NanoFreeze_Configuraciones\",\"NanoFreeze_Funciones\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 1180,
+        "wires": [
+            [
+                "afc395a8f52fbefc"
+            ]
+        ]
+    },
+    {
+        "id": "0feec9946151b03c",
+        "type": "ui_button",
+        "z": "934857fc6df36ba6",
+        "name": "",
+        "group": "dee1869cf73040de",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Refrescar dashboard",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "refresh",
+        "payload": "{\"group\":{\"hide\":[\"NanoFreeze_MQTT\",\"NanoFreeze_Información\",\"NanoFreeze_Modbus\",\"NanoFreeze_Funciones\"],\"show\":[\"NanoFreeze_Configuraciones\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 1240,
+        "wires": [
+            [
+                "afc395a8f52fbefc"
+            ]
+        ]
+    },
+    {
+        "id": "73daaa30bf12abf0",
+        "type": "ui_switch",
+        "z": "934857fc6df36ba6",
+        "name": "",
+        "label": "Capacidad energética",
+        "tooltip": "",
+        "group": "identificacion_group_id",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "energy_capability",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 270,
+        "y": 180,
+        "wires": [
+            [
+                "abcd58f00e92ce77"
+            ]
+        ]
+    },
+    {
+        "id": "09376ff91b542d64",
+        "type": "ui_switch",
+        "z": "934857fc6df36ba6",
+        "name": "",
+        "label": "Capacidad de temperatura",
+        "tooltip": "",
+        "group": "identificacion_group_id",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "temperature_capability",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 280,
+        "y": 260,
+        "wires": [
+            [
+                "abcd58f00e92ce77"
+            ]
+        ]
+    },
+    {
+        "id": "743eeaf57e364f6c",
+        "type": "ui_text_input",
+        "z": "934857fc6df36ba6",
+        "name": "",
+        "label": "ID Dispositivo",
+        "tooltip": "Ingrese ID y verifique en DB",
+        "group": "identificacion_group_id",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": 300,
+        "topic": "id_device",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "417f06f1c633178d"
+            ]
+        ]
+    },
+    {
+        "id": "378c875b6cb14aa5",
+        "type": "ui_text",
+        "z": "934857fc6df36ba6",
+        "group": "identificacion_group_id",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nombre del Dispositivo",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": "",
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1370,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "40649b1aec1c9ed2",
+        "type": "ui_text",
+        "z": "934857fc6df36ba6",
+        "group": "identificacion_group_id",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": "",
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1400,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "afc395a8f52fbefc",
+        "type": "ui_ui_control",
+        "z": "934857fc6df36ba6",
+        "name": "",
+        "events": "all",
+        "x": 580,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4f326e053ea799a",
+        "type": "ui_template",
+        "z": "934857fc6df36ba6",
+        "group": "modbus_config_group_id",
+        "name": "Estado de la conexion",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"font-size:18px;font-weight:bold;padding:12px;border-radius:6px;background:#f8f9fa;text-align:center;\">\n    <span style=\"color: {{msg.color}};\">Estado Modbus: {{msg.payload}}</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 620,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fb04971651bdb88",
+        "type": "ui_template",
+        "z": "934857fc6df36ba6",
+        "group": "modbus_config_group_id",
+        "name": "Modbus Fields",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<div layout=\"column\" ng-if=\"msg.modbus_type === 'RTU'\">\n\n    <md-input-container class=\"md-block\">\n        <label>Baud Rate</label>\n        <md-select ng-model=\"item.rtu_baud\">\n            <md-option value=\"9600\">9600</md-option>\n            <md-option value=\"19200\">19200</md-option>\n            <md-option value=\"38400\">38400</md-option>\n            <md-option value=\"57600\">57600</md-option>\n            <md-option value=\"115200\">115200</md-option>\n        </md-select>\n    </md-input-container>\n\n    <md-input-container class=\"md-block\">\n        <label>Slave ID</label>\n        <input ng-model=\"item.rtu_slave_id\" type=\"number\" min=\"1\" max=\"247\" placeholder=\"1\">\n    </md-input-container>\n\n    <md-input-container class=\"md-block\">\n        <label>Parity</label>\n        <md-select ng-model=\"item.rtu_parity\">\n            <md-option value=\"none\">None</md-option>\n            <md-option value=\"even\">Even</md-option>\n            <md-option value=\"odd\">Odd</md-option>\n        </md-select>\n    </md-input-container>\n\n    <md-input-container class=\"md-block\">\n        <label>Data Bits</label>\n        <md-select ng-model=\"item.rtu_data_bits\">\n            <md-option value=\"8\">8</md-option>\n            <md-option value=\"7\">7</md-option>\n        </md-select>\n    </md-input-container>\n\n    <md-input-container class=\"md-block\">\n        <label>Stop Bits</label>\n        <md-select ng-model=\"item.rtu_stop_bits\">\n            <md-option value=\"1\">1</md-option>\n            <md-option value=\"2\">2</md-option>\n        </md-select>\n    </md-input-container>\n\n    <md-input-container class=\"md-block\">\n        <label>Dirección Inicial (Address)</label>\n        <input ng-model=\"item.address\" type=\"number\" min=\"0\" placeholder=\"0\">\n    </md-input-container>\n\n    <md-input-container class=\"md-block\">\n        <label>Cantidad de Registros</label>\n        <input ng-model=\"item.quantity\" type=\"number\" min=\"1\" max=\"125\" placeholder=\"10\">\n    </md-input-container>\n\n    <md-button class=\"md-raised md-primary\" ng-click=\"send({\n        payload: {\n            type: 'RTU',\n            baud: item.rtu_baud,\n            slave_id: item.rtu_slave_id,\n            parity: item.rtu_parity,\n            data_bits: item.rtu_data_bits,\n            stop_bits: item.rtu_stop_bits,\n            address: item.address,\n            quantity: item.quantity\n        }\n    })\">\n        Guardar RTU\n    </md-button>\n\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 480,
+        "y": 420,
+        "wires": [
+            [
+                "86114a456c54a61e",
+                "1a91282c597b8dc7"
+            ]
+        ]
+    },
+    {
+        "id": "0a053bda851ddfd0",
+        "type": "ui_template",
+        "z": "934857fc6df36ba6",
+        "group": "016de6dc82a05fe5",
+        "name": "Estado MQTT",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"font-size:18px; font-weight:bold; padding:12px; border-radius:6px; background:#f8f9fa; text-align:center;\">\n    <span style=\"color: {{msg.color}};\">Estado MQTT: {{msg.payload}}</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1040,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "082e43bd5417b56a",
+        "type": "modbus-flex-getter",
+        "z": "934857fc6df36ba6",
+        "name": "Leer Datos Crudos",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "269659490639847f",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 890,
+        "y": 600,
+        "wires": [
+            [
+                "5904a01c4f2d94a0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f43d9da2b3ff6cc4",
+        "type": "modbus-flex-connector",
+        "z": "934857fc6df36ba6",
+        "name": "Conector Modbus Dinámico",
+        "maxReconnectsPerMinute": 4,
+        "emptyQueue": false,
+        "showStatusActivities": true,
+        "showErrors": true,
+        "server": "269659490639847f",
+        "emptyMsgOnFail": false,
+        "configMsgOnChange": true,
+        "x": 1100,
+        "y": 480,
+        "wires": [
+            [
+                "358ce7e7e33accca"
+            ]
+        ]
+    },
+    {
+        "id": "3d8f487978a48885",
+        "type": "sqlite",
+        "z": "934857fc6df36ba6",
+        "mydb": "e49a1121dd1bbc8c",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Buffer",
+        "x": 2030,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d8a0c17cec6f7e8",
+        "type": "mysql",
+        "z": "934857fc6df36ba6",
+        "mydb": "1534001d1511dfb8",
+        "name": "Conexion DB",
+        "x": 790,
+        "y": 60,
+        "wires": [
+            [
+                "327b5e637ec0ab34"
+            ]
+        ]
+    },
+    {
+        "id": "aa1fc8829ff03cc5",
+        "type": "inject",
+        "z": "934857fc6df36ba6",
+        "name": "Escanear puertos al arrancar",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 2,
+        "topic": "",
+        "x": 180,
+        "y": 400,
+        "wires": [
+            [
+                "fa2fa9389967d0e5"
+            ]
+        ]
+    },
+    {
+        "id": "b6c934da102973c3",
+        "type": "ui_button",
+        "z": "934857fc6df36ba6",
+        "name": "Escanear puertos",
+        "group": "modbus_config_group_id",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Escanear puertos",
+        "tooltip": "Detecta los puertos seriales disponibles",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "search",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 480,
+        "wires": [
+            [
+                "fa2fa9389967d0e5"
+            ]
+        ]
+    },
+    {
+        "id": "fa2fa9389967d0e5",
+        "type": "exec",
+        "z": "934857fc6df36ba6",
+        "command": "ls /dev/ttyACM* /dev/ttyUSB* /dev/ttyS0 2>/dev/null",
+        "addpay": false,
+        "append": "",
+        "useSpawn": false,
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Detectar puertos seriales",
+        "x": 470,
+        "y": 500,
+        "wires": [
+            [
+                "6f6dd2424d6898bb"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6f6dd2424d6898bb",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Formatear lista de puertos",
+        "func": "const puertos = msg.payload\n    .trim()\n    .split(\"\\n\")\n    .filter(p => p.length > 0)\n    .map(p => ({ label: p.trim(), value: p.trim() }));\n\nif (puertos.length === 0) {\n    puertos.push({ label: \"Sin puertos detectados\", value: \"\" });\n}\n\nmsg.payload = puertos;\nmsg.topic = \"options\";\n\nglobal.set(\"puertos_disponibles\", puertos);\nnode.status({fill:\"green\", shape:\"dot\", text: puertos.length + \" puerto(s) detectado(s)\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 440,
+        "wires": [
+            [
+                "c6dc6f8a0743ea7e",
+                "8e96950907358fed"
+            ]
+        ]
+    },
+    {
+        "id": "785e5a3577a39772",
+        "type": "function",
+        "z": "934857fc6df36ba6",
+        "name": "Guardar puerto seleccionado",
+        "func": "if (msg.topic === \"options\") return null;\n\nconst cfg = global.get(\"modbus_rtu_config\") || {};\ncfg.serialPort = msg.payload;\nglobal.set(\"modbus_rtu_config\", cfg);\n\nnode.status({fill:\"blue\", shape:\"dot\", text: \"Puerto: \" + msg.payload});\nnode.warn(\"Puerto guardado: \" + msg.payload);\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9cf51927bc693c5",
+        "type": "ui_text",
+        "z": "934857fc6df36ba6",
+        "group": "modbus_config_group_id",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Potencia",
+        "label": "Potencia",
+        "format": "{{msg.payload.power}} W",
+        "layout": "row-spread",
+        "className": "",
+        "style": "",
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1450,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "218795410d980ca0",
+        "type": "ui_text",
+        "z": "934857fc6df36ba6",
+        "group": "modbus_config_group_id",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Energia",
+        "label": "Energía",
+        "format": "{{msg.payload.energy_kwh}} kWh",
+        "layout": "row-spread",
+        "className": "",
+        "style": "",
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1450,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "c6dc6f8a0743ea7e",
+        "type": "debug",
+        "z": "934857fc6df36ba6",
+        "name": "debug Formatear lista de puertos",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8e96950907358fed",
+        "type": "ui_template",
+        "z": "934857fc6df36ba6",
+        "group": "modbus_config_group_id",
+        "name": "Puerto serial",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<md-input-container class=\"md-block\">\n    <label>Puerto Serial</label>\n    <md-select ng-model=\"item.puerto\" ng-change=\"send({payload: item.puerto, topic: 'rtu_port'})\">\n        <md-option ng-repeat=\"p in msg.payload\" value=\"{{p.value}}\">\n            {{p.label}}\n        </md-option>\n    </md-select>\n</md-input-container>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1130,
+        "y": 380,
+        "wires": [
+            [
+                "785e5a3577a39772"
+            ]
+        ]
+    },
+    {
+        "id": "f29f84c00f182318",
+        "type": "delay",
+        "z": "934857fc6df36ba6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1000,
+        "y": 540,
+        "wires": [
+            [
+                "589066c7d10a2358"
+            ]
+        ]
+    },
+    {
+        "id": "529eeddfa5b85c98",
+        "type": "exec",
+        "z": "c65f7edc8c317f3f",
+        "command": "cat /sys/class/net/wlan0/address",
+        "addpay": false,
+        "append": "",
+        "useSpawn": false,
+        "timer": "",
+        "name": "Obtener MAC",
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [
+                "65e66ffe0cd6e99b"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "65e66ffe0cd6e99b",
+        "type": "function",
+        "z": "c65f7edc8c317f3f",
+        "name": "Formatear MAC",
+        "func": "let mac = msg.payload.toString().trim().replace(/:/g,'').toUpperCase();\nflow.set('serial', mac);\nreturn { topic: \"$aws/certificates/create/json\", payload: \"\" };",
+        "outputs": 1,
+        "x": 620,
+        "y": 100,
+        "wires": [
+            [
+                "0da99441c7c2ce0f",
+                "ec4d94feeab7fa95"
+            ]
+        ]
+    },
+    {
+        "id": "0da99441c7c2ce0f",
+        "type": "mqtt out",
+        "z": "c65f7edc8c317f3f",
+        "name": "AWS OUT",
+        "topic": "",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c59a3fef7016c4f",
+        "x": 850,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f38b74d45b894579",
+        "type": "mqtt in",
+        "z": "c65f7edc8c317f3f",
+        "name": "Cert Create Accepted",
+        "topic": "$aws/certificates/create/json/accepted",
+        "qos": "1",
+        "datatype": "json",
+        "broker": "9c59a3fef7016c4f",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "0ea85728306af1f0"
+            ]
+        ]
+    },
+    {
+        "id": "0ea85728306af1f0",
+        "type": "function",
+        "z": "c65f7edc8c317f3f",
+        "name": "Enviar Provision",
+        "func": "flow.set('deviceCert', msg.payload.certificatePem);\nflow.set('deviceKey', msg.payload.privateKey);\n\nlet serial = flow.get('serial');\n\nreturn {\n    topic: \"$aws/provisioning-templates/IbisaTemplate/provision/json\",\n    payload: {\n        certificateOwnershipToken: msg.payload.certificateOwnershipToken,\n        parameters: {\n            SerialNumber: serial\n        }\n    }\n};",
+        "outputs": 1,
+        "x": 480,
+        "y": 220,
+        "wires": [
+            [
+                "0da99441c7c2ce0f",
+                "558764fd7d55735d"
+            ]
+        ]
+    },
+    {
+        "id": "d931505ae05d8871",
+        "type": "mqtt in",
+        "z": "c65f7edc8c317f3f",
+        "name": "Provision Accepted",
+        "topic": "$aws/provisioning-templates/IbisaTemplate/provision/json/accepted",
+        "qos": "1",
+        "datatype": "json",
+        "broker": "9c59a3fef7016c4f",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "ddc57507f89a5db9"
+            ]
+        ]
+    },
+    {
+        "id": "ddc57507f89a5db9",
+        "type": "function",
+        "z": "c65f7edc8c317f3f",
+        "name": "Guardar Certificados",
+        "func": "let cert = flow.get('deviceCert');\nlet key = flow.get('deviceKey');\nlet thingName = msg.payload.thingName;\n\nreturn [\n    { payload: cert, filename: \"/home/pi/certificados/device.pem.crt\" },\n    { payload: key, filename: \"/home/pi/certificados/device.private.key\" },\n    { payload: thingName, filename: \"/home/pi/certificados/thing-name.txt\" }\n];",
+        "outputs": 3,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 340,
+        "wires": [
+            [
+                "cbc164173bdc4141"
+            ],
+            [
+                "293278a25035e101"
+            ],
+            [
+                "79bd527cb00b05cb"
+            ]
+        ]
+    },
+    {
+        "id": "ec4d94feeab7fa95",
+        "type": "debug",
+        "z": "c65f7edc8c317f3f",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "558764fd7d55735d",
+        "type": "debug",
+        "z": "c65f7edc8c317f3f",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "cbc164173bdc4141",
+        "type": "file",
+        "z": "c65f7edc8c317f3f",
+        "name": "cert",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 730,
+        "y": 320,
+        "wires": [
+            [
+                "a2469e60f1cc399c",
+                "65c1d9b6991fa5cb"
+            ]
+        ]
+    },
+    {
+        "id": "293278a25035e101",
+        "type": "file",
+        "z": "c65f7edc8c317f3f",
+        "name": "key",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 730,
+        "y": 360,
+        "wires": [
+            [
+                "2373283eb82e67e4",
+                "65c1d9b6991fa5cb"
+            ]
+        ]
+    },
+    {
+        "id": "79bd527cb00b05cb",
+        "type": "file",
+        "z": "c65f7edc8c317f3f",
+        "name": "thing",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 730,
+        "y": 400,
+        "wires": [
+            [
+                "ec915141e68fba27",
+                "65c1d9b6991fa5cb"
+            ]
+        ]
+    },
+    {
+        "id": "a2469e60f1cc399c",
+        "type": "debug",
+        "z": "c65f7edc8c317f3f",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "2373283eb82e67e4",
+        "type": "debug",
+        "z": "c65f7edc8c317f3f",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "ec915141e68fba27",
+        "type": "debug",
+        "z": "c65f7edc8c317f3f",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "52c1f1266ec927f0",
+        "type": "exec",
+        "z": "c65f7edc8c317f3f",
+        "command": "sudo systemctl restart nodered",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Restart Node-Red",
+        "x": 1090,
+        "y": 540,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "65c1d9b6991fa5cb",
+        "type": "delay",
+        "z": "c65f7edc8c317f3f",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 840,
+        "y": 540,
+        "wires": [
+            [
+                "52c1f1266ec927f0"
+            ]
+        ]
+    },
+    {
+        "id": "18ac093d6b3bb4d5",
+        "type": "ui_button",
+        "z": "c65f7edc8c317f3f",
+        "name": "",
+        "group": "016de6dc82a05fe5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Generar certificados",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "none",
+        "topicType": "msg",
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "529eeddfa5b85c98"
+            ]
+        ]
+    },
+    {
+        "id": "84ed2e6ed6f5b67d",
+        "type": "link in",
+        "z": "7f230b831953d37b",
+        "name": "Link In: disparar al reconectar",
+        "links": [
+            "0a70ac134170a0cf"
+        ],
+        "x": 65,
+        "y": 60,
+        "wires": [
+            [
+                "f431562473529684"
+            ]
+        ]
+    },
+    {
+        "id": "8bd7b4e7628bf531",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "Disparar lectura de pendiente",
+        "func": "node.warn(\"Reconexión detectada → esperando 4 segundos para estabilizar MQTT\");\nreturn new Promise(resolve => {\n    setTimeout(() => {\n        resolve([{\n            topic: `SELECT id, uuid, payload, intentos FROM buffer_iot WHERE enviado = 0 ORDER BY id ASC LIMIT 1`\n        }]);\n    }, 4000);\n});",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 80,
+        "wires": [
+            [
+                "ed490a29eaba9106",
+                "23055284ded1282e"
+            ]
+        ]
+    },
+    {
+        "id": "ddf9509a2d1c1ea0",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "Preparar y enviar pendiente",
+        "func": "node.warn(\"Preparar y enviar pendiente - entrada recibida\");\n\nif (msg.payload && Array.isArray(msg.payload) && msg.payload.length > 0) {\n    const row = msg.payload[0];\n    node.warn(\"Pendiente encontrado ID: \" + row.id);\n\n    msg.buffer_id   = row.id;\n    msg.intentos    = row.intentos || 0;\n\n    try {\n        msg.payload = JSON.parse(row.payload);\n    } catch (err) {\n        node.warn(\"Error parseando JSON del buffer → ID \" + row.id + \" → se descarta\");\n        return [null, null, {\n            topic: \"SELECT id, uuid, payload, intentos FROM buffer_iot WHERE enviado = 0 ORDER BY id ASC LIMIT 1\"\n        }];\n    }\n\n    msg.topic = `NanoFreeze/${msg.payload.deviceId}/Sensores`;\n\n    node.warn(\"Listo para enviar a MQTT:\");\n    node.warn(msg.payload);\n    node.warn(\"MQTT topic: \" + msg.topic);\n    node.warn(\"📤 Enviando a MQTT y a marcar OK\");\n\n    return [msg, msg, null];\n\n} else {\n    node.warn(\"No hay más pendientes. Iniciando limpieza de registros enviados...\");\n\n    return [null, null, {\n        topic: \"DELETE FROM buffer_iot WHERE enviado = 1\",\n        clean_trigger: true,\n        clean_reason: \"buffer_vaciado\"\n    }];\n}",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 120,
+        "wires": [
+            [
+                "4001d00643170df1",
+                "d6b18e9640b3c49c"
+            ],
+            [
+                "4a665d4353e4f55e"
+            ],
+            [
+                "fd47843a109b5ef5"
+            ]
+        ]
+    },
+    {
+        "id": "4001d00643170df1",
+        "type": "mqtt out",
+        "z": "7f230b831953d37b",
+        "name": "MQTT out",
+        "topic": "",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "298b7e953ed62ce1",
+        "x": 1480,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4a665d4353e4f55e",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "Marcar como enviado OK",
+        "func": "if (typeof msg.buffer_id === \"undefined\" || isNaN(msg.buffer_id)) {\n    node.warn(\"ABORT: buffer_id inválido o ausente → \" + JSON.stringify(msg.buffer_id));\n    return null;\n}\n\nconst id = Number(msg.buffer_id);     // fuerza a número\nconst intentos = Number(msg.intentos || 0);\n\nif (isNaN(id) || id <= 0) {\n    node.error(\"ID inválido después de conversión: \" + msg.buffer_id);\n    return null;\n}\n\nnode.warn(`Intentando marcar como enviado → ID=${id} (tipo=${typeof id}), intentos=${intentos}`);\n\nmsg.topic = `UPDATE buffer_iot \n             SET enviado = 1, \n                 fecha_envio = CURRENT_TIMESTAMP, \n                 intentos = ${intentos} \n             WHERE id = ${id}`;\nmsg.payload = []; \n\nnode.warn(\"UPDATE preparado → payload: \" + JSON.stringify(msg.payload));\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 360,
+        "wires": [
+            [
+                "162d37e7aff52e7e",
+                "0056486dd6267673"
+            ]
+        ]
+    },
+    {
+        "id": "6fec9cdd538bd063",
+        "type": "catch",
+        "z": "7f230b831953d37b",
+        "name": "Catch errores MQTT buffer",
+        "scope": [
+            "4001d00643170df1"
+        ],
+        "uncaught": false,
+        "x": 250,
+        "y": 560,
+        "wires": [
+            [
+                "ff25eaf32d6bfd74"
+            ]
+        ]
+    },
+    {
+        "id": "ff25eaf32d6bfd74",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "Manejar fallo de envío",
+        "func": "node.warn(\"Fallo al enviar pendiente → ID: \" + (msg.buffer_id || \"desconocido\"));\n\nlet intentos = (msg.intentos || 0) + 1;\n\nif (!msg.buffer_id) {\n    node.warn(\"No hay buffer_id → no se puede actualizar intentos\");\n} else {\n    msg.topic = `UPDATE buffer_iot SET intentos = ? WHERE id = ?`;\n    msg.payload = [intentos, parseInt(msg.buffer_id, 10)];\n}\n\nnode.warn(\"Intentos ahora: \" + intentos + \" → continuamos con el siguiente\");\n\nreturn {\n    topic: `SELECT id, uuid, payload, intentos FROM buffer_iot WHERE enviado = 0 ORDER BY id ASC LIMIT 1`\n};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 560,
+        "wires": [
+            [
+                "1c116d921149756c",
+                "350fe727dcd89057"
+            ]
+        ]
+    },
+    {
+        "id": "d07834d869cc67c9",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "Leer 1 pendiente",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a63b6c18df82b6c7",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Actualizar buffer ok",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "d6b18e9640b3c49c",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Preparar y enviar pendiente",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "0056486dd6267673",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Marcar como enviado OK",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ed490a29eaba9106",
+        "type": "delay",
+        "z": "7f230b831953d37b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 700,
+        "y": 120,
+        "wires": [
+            [
+                "0c5c3d039ad05f55"
+            ]
+        ]
+    },
+    {
+        "id": "be37a5656861c393",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Actualizar buffer fallo",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "350fe727dcd89057",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Manejar fallo de envío",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "2cd286591176619e",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "Continuar lectura pendiente",
+        "func": "node.warn(\"Resultado recibido para confirmación:\");\n\nif (!msg.payload || msg.payload.length === 0) {\n    node.warn(\"No hay más pendientes - FIN DEL PROCESO\");\n    return null;\n}\n\nconst row = msg.payload[0];\nnode.warn(`ID encontrado: ${row.id}, intentos: ${row.intentos}`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 1120,
+        "wires": [
+            [
+                "ce5d6807f3e700e1"
+            ]
+        ]
+    },
+    {
+        "id": "ce5d6807f3e700e1",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Continuar lectura pendiente",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2020,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "18714b1ae3fb85eb",
+        "type": "delay",
+        "z": "7f230b831953d37b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1300,
+        "y": 1100,
+        "wires": [
+            [
+                "2cd286591176619e"
+            ]
+        ]
+    },
+    {
+        "id": "1ef3ade4d080f7ae",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "Confirmar marcado como enviado",
+        "func": "const id = msg.buffer_id;\n\nif (id === undefined) {\n    node.warn(\"❌ buffer_id no presente, abortando\");\n    return null;\n}\n\nnode.warn(`✅ UPDATE ejecutado para ID ${id}, confiando en que fue exitoso`);\n\nreturn {\n    topic: \"SELECT id, uuid, payload, intentos FROM buffer_iot WHERE enviado = 0 ORDER BY id ASC LIMIT 1\"\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2db3c766a687e02",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Leer estado enviado",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "c9be339735451eca",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "Verificar registro",
+        "func": "const id = msg.buffer_id ? parseInt(msg.buffer_id, 10) : null;\n\nif (!id) {\n    node.warn(\"❌ No hay buffer_id válido para verificar\");\n    return null;\n}\n\nnode.warn(`Verificando ID ${id} (tipo: ${typeof id})`);\n\nif (!msg.payload || msg.payload.length === 0) {\n    node.warn(`❌ No se encontró el ID ${id} en la BD`);\n    \n    return {\n        buffer_id: id,\n        diagnostic: true,\n        topic: \"SELECT id FROM buffer_iot ORDER BY id\"\n    };\n}\n\nconst estado = msg.payload[0].enviado;\nnode.warn(`✅ ID ${id} encontrado, enviado = ${estado}`);\n\nif (estado === 1) {\n    return {\n        topic: \"SELECT id, uuid, payload, intentos FROM buffer_iot WHERE enviado = 0 ORDER BY id ASC LIMIT 1\"\n    };\n} else {\n    node.warn(`❌ El UPDATE no funcionó, el ID ${id} sigue con enviado = ${estado}`);\n    return {\n        topic: \"SELECT id, uuid, payload, intentos FROM buffer_iot WHERE enviado = 0 ORDER BY id ASC LIMIT 1\"\n    };\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1880,
+        "y": 880,
+        "wires": [
+            [
+                "627803a1a17014a5",
+                "4020ae75706698e1"
+            ]
+        ]
+    },
+    {
+        "id": "627803a1a17014a5",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Verificar registro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2110,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "32d8318394c0760e",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "function 3",
+        "func": "// Verificar resultado del UPDATE - VERSIÓN CORREGIDA\nnode.warn(\"=== VERIFICACIÓN DE FILAS AFECTADAS ===\");\nnode.warn(`UPDATE para ID ${msg.buffer_id}`);\nnode.warn(`Payload recibido: ${JSON.stringify(msg.payload)}`);\n\n// En node-red-node-sqlite, el resultado a veces tiene propiedad .changes\nif (msg.payload && typeof msg.payload === 'object') {\n    // Intentar obtener el número de filas afectadas\n    const changes = msg.payload.changes || \n                    (msg.payload[0] && msg.payload[0].changes) || \n                    \"desconocido\";\n    \n    node.warn(`Filas afectadas: ${changes}`);\n    \n    if (changes === 0 || changes === \"desconocido\") {\n        node.warn(`⚠️ No se pudo confirmar si el UPDATE afectó filas`);\n        node.warn(`Array vacío = operación completada, pero sin certeza de cambios`);\n    } else {\n        node.warn(`✅ UPDATE exitoso: ${changes} fila(s) modificada(s)`);\n    }\n}\n\n// AHORA LA PARTE IMPORTANTE: Verificar realmente con un SELECT\n// Vamos a hacer una consulta para ver el estado actual del ID 3\nnode.warn(`🔍 Verificando estado real del ID ${msg.buffer_id} en la BD...`);\n\n// Crear mensaje para SELECT de verificación\nlet verifyMsg = {\n    buffer_id: msg.buffer_id,\n    intentos: msg.intentos,\n    topic: \"SELECT enviado FROM buffer_iot WHERE id = ?\",\n    payload: [msg.buffer_id]\n};\n\nreturn verifyMsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 880,
+        "wires": [
+            [
+                "a63b6c18df82b6c7",
+                "77629f11712508db"
+            ]
+        ]
+    },
+    {
+        "id": "ce6b6b2a64d00b9e",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Registros",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2440,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "1016f87a309841d9",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "Mostrar resultados",
+        "func": "node.warn(\"=== IDs ENCONTRADOS EN LA BD ===\");\nif (msg.payload && msg.payload.length > 0) {\n    msg.payload.forEach(row => {\n        node.warn(`ID: ${row.id} (tipo: ${typeof row.id})`);\n    });\n    \n    const ids = msg.payload.map(row => row.id);\n    node.warn(`IDs disponibles: ${ids.join(', ')}`);\n    \n    const row3 = msg.payload.find(row => row.id === 3);\n    if (row3) {\n        node.warn(`✅ El ID 3 SÍ existe en la BD`);\n        node.warn(`ID 3 es tipo: ${typeof row3.id}, valor: ${row3.id}`);\n        node.warn(`✅ El ID es NUMBER, debería funcionar con número.`);\n    } else {\n        node.warn(`❌ El ID 3 NO existe en la BD`);\n    }\n}\n\nnode.warn(\"🔍 Continuando con la búsqueda del siguiente pendiente...\");\n\nreturn {\n    topic: \"SELECT id, uuid, payload, intentos FROM buffer_iot WHERE enviado = 0 ORDER BY id ASC LIMIT 1\"\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2330,
+        "y": 760,
+        "wires": [
+            [
+                "b8aea3feb03b5147"
+            ]
+        ]
+    },
+    {
+        "id": "b8aea3feb03b5147",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Mostrar resultados",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2590,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "23055284ded1282e",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Disparar lectura de pendiente",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "2b23e048a4c5c410",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug test function 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1600,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "11b398dc608c16bb",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "function 4",
+        "func": "// Analizar verificación del UPDATE\nnode.warn(\"=== RESULTADO DE VERIFICACIÓN ===\");\nnode.warn(`ID: ${msg.buffer_id}`);\n\nif (!msg.payload || msg.payload.length === 0) {\n    node.warn(`❌ ERROR: No se encontró el ID ${msg.buffer_id} en la BD`);\n    return null;\n}\n\nconst estado = msg.payload[0].enviado;\nnode.warn(`Estado actual del ID ${msg.buffer_id}: enviado = ${estado}`);\n\nif (estado === 1) {\n    node.warn(`✅ VERIFICADO: ID ${msg.buffer_id} está marcado como enviado`);\n    // Buscar siguiente pendiente\n    return {\n        topic: \"SELECT id, uuid, payload, intentos FROM buffer_iot WHERE enviado = 0 ORDER BY id ASC LIMIT 1\"\n    };\n} else {\n    node.warn(`❌ PROBLEMA: ID ${msg.buffer_id} sigue con enviado = ${estado}`);\n    node.warn(`El UPDATE NO funcionó - revisar permisos o estructura de la BD`);\n    \n    // Para no quedar en loop infinito, saltar este ID\n    node.warn(`⏩ Saltando ID ${msg.buffer_id} y buscando siguiente...`);\n    return {\n        topic: `SELECT id, uuid, payload, intentos FROM buffer_iot WHERE enviado = 0 AND id > ${msg.buffer_id} ORDER BY id ASC LIMIT 1`\n    };\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86248da7cbacedec",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "Trigger siguiente",
+        "func": "node.warn(\"UPDATE confirmado → buscando siguiente pendiente\");\n\nreturn {\n    topic: `\n        SELECT id, uuid, payload, intentos \n        FROM buffer_iot \n        WHERE enviado = 0 \n        ORDER BY id ASC \n        LIMIT 1\n    `\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 340,
+        "wires": [
+            [
+                "7a0d52ac3892c434",
+                "0c5c3d039ad05f55"
+            ]
+        ]
+    },
+    {
+        "id": "7a0d52ac3892c434",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Trigger siguiente",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1470,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "c4ee3aaf85bb055d",
+        "type": "function",
+        "z": "7f230b831953d37b",
+        "name": "Verificar update",
+        "func": "// Verificar que el UPDATE realmente ocurrió\nreturn {\n    topic: \"SELECT enviado, intentos, fecha_envio FROM buffer_iot WHERE id = ?\",\n    payload: [Number(msg.buffer_id || 0)]\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 340,
+        "wires": [
+            [
+                "86248da7cbacedec",
+                "35e29dedd96eeb98"
+            ]
+        ]
+    },
+    {
+        "id": "35e29dedd96eeb98",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Verificar update",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "360422a7cb564736",
+        "type": "delay",
+        "z": "7f230b831953d37b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 800,
+        "y": 340,
+        "wires": [
+            [
+                "c4ee3aaf85bb055d"
+            ]
+        ]
+    },
+    {
+        "id": "04d349cfb8f8b89a",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Limpiar buffer",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f431562473529684",
+        "type": "switch",
+        "z": "7f230b831953d37b",
+        "name": "Funciones",
+        "property": "procesamiento_activo",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "8bd7b4e7628bf531"
+            ],
+            [
+                "00b986e2cd4fb285"
+            ]
+        ]
+    },
+    {
+        "id": "00b986e2cd4fb285",
+        "type": "debug",
+        "z": "7f230b831953d37b",
+        "name": "debug Funciones (buffer)",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0c5c3d039ad05f55",
+        "type": "sqlite",
+        "z": "7f230b831953d37b",
+        "mydb": "e49a1121dd1bbc8c",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Leer 1 pendiente",
+        "x": 910,
+        "y": 120,
+        "wires": [
+            [
+                "ddf9509a2d1c1ea0",
+                "d07834d869cc67c9"
+            ]
+        ]
+    },
+    {
+        "id": "162d37e7aff52e7e",
+        "type": "sqlite",
+        "z": "7f230b831953d37b",
+        "mydb": "e49a1121dd1bbc8c",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Actualizar buffer ok",
+        "x": 590,
+        "y": 320,
+        "wires": [
+            [
+                "360422a7cb564736"
+            ]
+        ]
+    },
+    {
+        "id": "1c116d921149756c",
+        "type": "sqlite",
+        "z": "7f230b831953d37b",
+        "mydb": "e49a1121dd1bbc8c",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Actualizar buffer fallo",
+        "x": 860,
+        "y": 640,
+        "wires": [
+            [
+                "be37a5656861c393"
+            ]
+        ]
+    },
+    {
+        "id": "fca8825c4f4ed4fd",
+        "type": "sqlite",
+        "z": "7f230b831953d37b",
+        "mydb": "e49a1121dd1bbc8c",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Leer estado enviado",
+        "x": 760,
+        "y": 1120,
+        "wires": [
+            [
+                "c2db3c766a687e02",
+                "18714b1ae3fb85eb"
+            ]
+        ]
+    },
+    {
+        "id": "4020ae75706698e1",
+        "type": "sqlite",
+        "z": "7f230b831953d37b",
+        "mydb": "e49a1121dd1bbc8c",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Registros",
+        "x": 2120,
+        "y": 840,
+        "wires": [
+            [
+                "ce6b6b2a64d00b9e",
+                "1016f87a309841d9"
+            ]
+        ]
+    },
+    {
+        "id": "77629f11712508db",
+        "type": "sqlite",
+        "z": "7f230b831953d37b",
+        "mydb": "e49a1121dd1bbc8c",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "test function 3",
+        "x": 1340,
+        "y": 860,
+        "wires": [
+            [
+                "2b23e048a4c5c410",
+                "11b398dc608c16bb"
+            ]
+        ]
+    },
+    {
+        "id": "fd47843a109b5ef5",
+        "type": "sqlite",
+        "z": "7f230b831953d37b",
+        "mydb": "e49a1121dd1bbc8c",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Limpiar buffer",
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "04d349cfb8f8b89a"
+            ]
+        ]
+    },
+    {
+        "id": "ec113c8b2ea60106",
+        "type": "change",
+        "z": "d0a0b58d43b094c9",
+        "name": "Control",
+        "rules": [
+            {
+                "t": "set",
+                "p": "procesamiento_activo",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "d55203a782405b85"
+            ]
+        ]
+    },
+    {
+        "id": "eb708e1a8cdc241a",
+        "type": "ui_button",
+        "z": "d0a0b58d43b094c9",
+        "name": "",
+        "group": "datos_group_id",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Activar dispositivo",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power",
+        "payload": true,
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "ec113c8b2ea60106",
+                "a85537c977e5a59a"
+            ]
+        ]
+    },
+    {
+        "id": "7e2775c81d919f25",
+        "type": "ui_button",
+        "z": "d0a0b58d43b094c9",
+        "name": "",
+        "group": "datos_group_id",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Desactivar dispositivo",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "stop",
+        "payload": false,
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "ec113c8b2ea60106",
+                "87c934778ce93592"
+            ]
+        ]
+    },
+    {
+        "id": "3d98e9e82e86b3b4",
+        "type": "inject",
+        "z": "d0a0b58d43b094c9",
+        "name": "Inicializar activo por defecto",
+        "props": [
+            {
+                "p": "payload",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.5,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "ec113c8b2ea60106"
+            ]
+        ]
+    },
+    {
+        "id": "a85537c977e5a59a",
+        "type": "debug",
+        "z": "d0a0b58d43b094c9",
+        "name": "debug Activar dispositivo",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "87c934778ce93592",
+        "type": "debug",
+        "z": "d0a0b58d43b094c9",
+        "name": "debug Desctivar dispositivo",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d55203a782405b85",
+        "type": "debug",
+        "z": "d0a0b58d43b094c9",
+        "name": "debug Control",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 120,
+        "wires": []
+    }
+]
